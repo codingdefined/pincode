@@ -3,22 +3,35 @@
   "version": "1.0.0",
   "description": "Node module to easily loopkup Indian PinCode Information",
   "author": "Coding Defined <codingdefined@gmail.com> (http://www.codingdefined.com)",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
-  	"fast-csv": "0.6.0"
+    "fast-csv": "^2.4.1"
   },
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/codingdefined/pincode.git"
+    "type": "git",
+    "url": "https://github.com/codingdefined/pincode.git"
   },
   "keywords": [
-  	"pincode",
-  	"pin",
-  	"india pin code"
+    "pincode",
+    "pin",
+    "india pin code"
   ],
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/index.js",
+    "watch-ts": "tsc -w",
+    "build": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
   "license": "MIT",
   "bugs": {
-  	  "url": "https://github.com/codingdefined/pincode/issues"
-  	},
-   "homepage" : "https://github.com/codingdefined/pincode"
+    "url": "https://github.com/codingdefined/pincode/issues"
+  },
+  "homepage": "https://github.com/codingdefined/pincode",
+  "devDependencies": {
+    "@types/node": "^10.11.4",
+    "ava": "^0.25.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  }
 }
