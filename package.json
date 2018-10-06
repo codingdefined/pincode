@@ -5,20 +5,27 @@
   "author": "Coding Defined <codingdefined@gmail.com> (http://www.codingdefined.com)",
   "main": "index.js",
   "dependencies": {
-  	"fast-csv": "0.6.0"
+    "fast-csv": "0.6.0"
   },
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/codingdefined/pincode.git"
+    "type": "git",
+    "url": "https://github.com/codingdefined/pincode.git"
   },
   "keywords": [
-  	"pincode",
-  	"pin",
-  	"india pin code"
+    "pincode",
+    "pin",
+    "india pin code"
   ],
   "license": "MIT",
   "bugs": {
-  	  "url": "https://github.com/codingdefined/pincode/issues"
-  	},
-   "homepage" : "https://github.com/codingdefined/pincode"
+    "url": "https://github.com/codingdefined/pincode/issues"
+  },
+  "homepage": "https://github.com/codingdefined/pincode",
+  "scripts": {
+    "build": "tsc index.ts"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  }
 }
