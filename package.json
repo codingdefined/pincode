@@ -19,7 +19,7 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "node dist/index.js",
-    "watch-ts": "tsc -w",
+    "watch": "tsc -w",
     "build": "tsc",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
@@ -30,7 +30,6 @@
   "homepage": "https://github.com/codingdefined/pincode",
   "devDependencies": {
     "@types/node": "^10.11.4",
-    "ava": "^0.25.0",
     "tslint": "^5.11.0",
     "typescript": "^3.1.1"
   }
